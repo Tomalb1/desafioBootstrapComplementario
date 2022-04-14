@@ -1,0 +1,200 @@
+
+.rr{
+    grid-area: rr;
+    height: 30px;
+    width: 100%;
+    background-color: #e2e2e2
+}
+
+
+
+body{
+    display: grid;
+    grid-template-areas: "rr"
+                         "header"
+                         "main"
+                         "footer";
+
+    font-family: 'Mukta', sans-serif;
+    background-color: #fff;
+} 
+/*Estilos Header */
+header{
+    grid-area: header;
+    background-color: #fff;
+}
+.logo{
+    max-width: auto;
+    max-height: 100px;
+}
+.menu{
+    padding: 1rem;
+}
+
+.menu:hover{
+    
+    border-bottom: solid 2.5px #111;
+
+
+}
+.botones:hover{
+    
+    transform: scale(1.5);
+    transition: 0.5s;
+
+}
+.no-hover{
+    border: color #fff;
+}
+.no-hover-color:hover{
+    
+    color: #111;
+}
+
+.links{
+
+    text-decoration: none;
+    color: #111;
+}
+.height-60{
+    height: 60px;
+    
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+
+    font-size: 21px;
+    text-decoration: none;
+    color: #111;
+}
+
+
+/* Estilo para imagenes del carrusel */
+main{
+    grid-area: main;
+    width: 100%;
+}
+.img-main{
+    max-width: 100%;
+    max-height: 950px;
+    
+}
+
+footer{
+    margin-top: 2px;
+    border-top: 4px solid gainsboro;
+    grid-area: footer;
+    height: 100px;
+    background-color: #111;
+}
+footer p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: gainsboro;
+}
+
+/* Estilos contacto */
+
+#inputAddress2{
+    height: 100px;
+}
+
+
+
+/* Media para celular */
+
+.menu-celu{
+    display: none;
+}
+@media screen and (max-width: 1000px){
+    .menu-celu{
+      
+        display: inline-block;
+    }
+    .display-none{
+        display: none;
+    }
+    .img-alt{
+        height: 750px;
+    }
+
+    .img-not{
+        height: 400px;
+    }
+
+}
+
+
+
+/* Estilos coleccion */
+
+/* .height-article{
+    padding: 10px 0px;
+    height: 1800px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.height-100{
+    height: 100%;
+}
+
+.height-33{
+    height: 33%;
+}
+
+.img-coleccion{
+   
+    width: 100%;
+    height: 100%;
+}
+
+.color-111{
+    background-color: #111;
+    color: #fff;
+} */
+
+.color-111{
+    background-color: #111;
+    color: #fff;
+} 
+
+
+/* Estilos novedades */
+
+
+.boton{
+    background-color: #111;
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px;
+    display: inline-block;
+}
+
+.boton:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: rgb(38, 38, 38);
+    cursor: pointer;
+    
+}
+
+.borde-none{
+    border: 0px #fff solid;
+}
+
+
+@media screen and (min-width: 1400px){
+    .img-not{
+        height: 700px;
+    }
+}
+
+.font-perso{
+    font-size: 20px;
+}
